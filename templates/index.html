@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ascii Web</title>
+    </head>
+
+    <body>
+        <h1>Welcome</h1>
+
+        <form action="/" method="POST">
+           <h2>Enter Text</h2>
+            <textarea name="text" id="text"></textarea>
+            
+            <h3>Choose Font</h3>
+           
+            <!-- <select name="font" id="font">
+                <option value="standard.txt">Standard</option>
+                <option value="shadow.txt">Shadow</option>
+                <option value="thinkertoy.txt">Thinkertoy</option>
+            </select>
+            <br><br> -->
+
+            <input type="radio" name="font" id="standard" value="standard.txt">
+            <label for="standard">standard.txt</label><br>
+            <input type="radio" name="font" id="shadow" value="shadow.txt">
+             <label for="shadow">shadow.txt</label><br>
+              <input type="radio" name="font" id="thinkertoy" value="thinkertoy.txt">
+               <label for="thinkertoy">thinkertoy.txt</label><br>
+            <br>
+            <button type="submit">Generate Art</button>
+        </form>
+        <h2>Ascii Output</h2>
+        <pre>{{.Result}}</pre>
+    </body>
+</html>
